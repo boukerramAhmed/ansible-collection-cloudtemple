@@ -78,7 +78,7 @@ jobs:
         run: |
           tar tzf dist/*.tar.gz | tee files.txt
           ! grep -E '^(tests|\.github)/' files.txt
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: collection
           path: dist/*.tar.gz
