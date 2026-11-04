@@ -1,0 +1,47 @@
+---
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        **Never paste your Personal Access Token**, and remove the IP addresses, names and IDs
+        you do not want to publish. Security issues go to SECURITY.md, not here.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Inventory configuration
+      description: Your `*cloudtemple.yml` file, without credentials.
+      render: yaml
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Output of `ansible-inventory -i <file> --list -vvvv` (redacted).
+      render: text
+  - type: input
+    id: collection-version
+    attributes:
+      label: Collection version
+      description: "`ansible-galaxy collection list boukerramahmed.cloudtemple`"
+    validations:
+      required: true
+  - type: textarea
+    id: ansible-version
+    attributes:
+      label: Ansible version
+      description: "`ansible --version`"
+      render: text
+    validations:
+      required: true

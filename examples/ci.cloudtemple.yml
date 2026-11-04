@@ -1,0 +1,15 @@
+---
+# CI runner on the Internet: hosts are reached on their floating IP, falling
+# back to the private IP. The PAT needs read access on the VPC API, otherwise
+# the inventory fails (fail_on_errors). Run with
+# ANSIBLE_INVENTORY_UNPARSED_FAILED=true so that an API error fails the job.
+plugin: boukerramahmed.cloudtemple.dynamicinventory
+vm_filters:
+  status: running
+fail_on_errors: true
+strict: true
+compose:
+  ansible_user: "'ubuntu'"
+keyed_groups:
+  - key: cloudtemple.az.name
+    prefix: zone

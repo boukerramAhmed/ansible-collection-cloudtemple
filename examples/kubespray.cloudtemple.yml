@@ -1,0 +1,14 @@
+---
+# Groups and variables expected by Kubespray, for VMs named k8s-master<n>
+# and k8s-worker<n>.
+plugin: boukerramahmed.cloudtemple.dynamicinventory
+private: true
+only_ipv4: true
+compose:
+  ip: cloudtemple.private_ips[0]
+  access_ip: cloudtemple.private_ips[0]
+groups:
+  kube_control_plane: cloudtemple.app == 'k8s-master'
+  etcd: cloudtemple.app == 'k8s-master'
+  kube_node: cloudtemple.app == 'k8s-worker'
+  k8s_cluster: cloudtemple.app in ['k8s-master', 'k8s-worker']

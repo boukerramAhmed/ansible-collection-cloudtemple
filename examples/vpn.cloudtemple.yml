@@ -1,0 +1,12 @@
+---
+# Ansible runs inside the VPC, or on a laptop connected to the VPN:
+# hosts are reached on their private IP and only the OpenStack-style
+# meta-app_<app> groups are created (consul1 -> meta-app_consul).
+plugin: boukerramahmed.cloudtemple.dynamicinventory
+private: true
+only_ipv4: true
+auto_groups: false
+compose:
+  ansible_user: "'ubuntu'"
+  private_ip: cloudtemple.private_ips[0]
+  public_ip: cloudtemple.public_ips | first | default('')

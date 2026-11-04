@@ -1,0 +1,7 @@
+*.tar.gz
+__pycache__/
+.pytest_cache/
+.venv*/
+.cache/
+dist/
+files.txt

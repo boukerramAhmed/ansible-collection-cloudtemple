@@ -1,0 +1,5 @@
+---
+# The collection only contains an inventory plugin and its API client: both run
+# on the controller, never on managed hosts (no Python 2.7 / 3.5 targets).
+modules:
+  python_requires: controller

@@ -1,0 +1,33 @@
+---
+namespace: boukerramahmed
+name: cloudtemple
+version: 0.1.0
+readme: README.md
+authors:
+  - Ahmed Boukerram (@boukerramAhmed)
+description: >-
+  Dynamic inventory for Cloud Temple VM Instances (French SecNumCloud cloud),
+  with OpenStack-style meta-app groups and floating IP support.
+license:
+  - GPL-3.0-or-later
+tags:
+  - cloud
+  - cloudtemple
+  - inventory
+  - secnumcloud
+  - infrastructure
+dependencies: {}
+repository: https://github.com/boukerramAhmed/ansible-collection-cloudtemple
+documentation: https://github.com/boukerramAhmed/ansible-collection-cloudtemple#readme
+homepage: https://github.com/boukerramAhmed/ansible-collection-cloudtemple
+issues: https://github.com/boukerramAhmed/ansible-collection-cloudtemple/issues
+build_ignore:
+  - "*.tar.gz"
+  - .github
+  - .gitignore
+  - .pytest_cache
+  - .venv*
+  - .cache
+  - dist
+  - tests
+  - pytest.ini

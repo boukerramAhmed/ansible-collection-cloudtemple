@@ -1,0 +1,7 @@
+---
+# Smallest working configuration.
+#   export CLOUDTEMPLE_CLIENT_ID=... CLOUDTEMPLE_SECRET_ID=...
+#   ansible-inventory -i minimal.cloudtemple.yml --graph
+# The PAT needs read access on VM Instances and VPC (floating IPs). With a PAT
+# that only reads VM Instances, add "private: true" or "fetch_floating_ips: false".
+plugin: boukerramahmed.cloudtemple.dynamicinventory

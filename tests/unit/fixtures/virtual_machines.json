@@ -1,0 +1,301 @@
+{
+  "vms": [
+    {
+      "id": "65d4cb7e-d4fc-5241-acf4-36821d366984",
+      "name": "k8s-worker2",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 2,
+      "ramGb": 4,
+      "diskSizeGb": 32,
+      "disksSizeGb": 72,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:47.789833Z",
+      "updatedAt": "2026-11-04T13:50:08.451857Z"
+    },
+    {
+      "id": "eda856b9-9aba-565d-a2ef-045bf773e2f5",
+      "name": "k8s-worker3",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 2,
+      "ramGb": 4,
+      "diskSizeGb": 32,
+      "disksSizeGb": 72,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:46.933912Z",
+      "updatedAt": "2026-11-04T13:50:04.495831Z"
+    },
+    {
+      "id": "39db76c2-bc2e-57b9-a198-cf2d3fcedf5e",
+      "name": "monitoring1",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 4,
+      "ramGb": 8,
+      "diskSizeGb": 32,
+      "disksSizeGb": 132,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:46.933892Z",
+      "updatedAt": "2026-11-04T13:51:47.647562Z"
+    },
+    {
+      "id": "12622af4-739b-5581-9832-d02b7d53ce7e",
+      "name": "web1",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 2,
+      "ramGb": 4,
+      "diskSizeGb": 32,
+      "disksSizeGb": 32,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:46.574931Z",
+      "updatedAt": "2026-11-04T13:48:29.334239Z"
+    },
+    {
+      "id": "79d2705d-482e-5e9e-99cb-48750962feb1",
+      "name": "consul1",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 2,
+      "ramGb": 4,
+      "diskSizeGb": 32,
+      "disksSizeGb": 32,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:46.574746Z",
+      "updatedAt": "2026-11-04T13:51:05.628094Z"
+    },
+    {
+      "id": "b87a1105-4f04-544d-9b9a-924aa2ba748e",
+      "name": "k8s-worker1",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 2,
+      "ramGb": 4,
+      "diskSizeGb": 32,
+      "disksSizeGb": 72,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-11-04T13:44:45.724657Z",
+      "updatedAt": "2026-11-04T13:50:02.094277Z"
+    },
+    {
+      "id": "facc7238-3589-5cfa-bfd8-63f8b759e4fe",
+      "name": "reporting-legacy",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 16,
+      "ramGb": 8,
+      "diskSizeGb": 32,
+      "disksSizeGb": 132,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-10-29T17:29:15.547548Z",
+      "updatedAt": "2026-11-03T23:25:05.830774Z"
+    },
+    {
+      "id": "f7ad8686-771d-506d-b784-000f81c4b285",
+      "name": "vpn-gateway1",
+      "status": "running",
+      "az": {
+        "id": "05ac3ef0-5b8d-59fd-bfcd-d822d5e85dde",
+        "name": "fr1-az05"
+      },
+      "image": {
+        "id": "4e577ce1-0afc-5619-9ff3-b2b76a629bd7",
+        "name": "Ubuntu 24.04 LTS"
+      },
+      "instanceFamily": {
+        "id": "7a337968-d5ca-5e61-8816-8b4f1478dec4",
+        "name": "Development"
+      },
+      "vcpu": 1,
+      "ramGb": 2,
+      "diskSizeGb": 32,
+      "disksSizeGb": 32,
+      "backupPolicy": {
+        "id": "579b5c03-fd59-519b-ac3f-750b9f796095",
+        "name": "No Backup",
+        "isDefault": true,
+        "retention": null,
+        "scheduleCron": null,
+        "scheduleWindowStartHour": 20,
+        "scheduleWindowDurationMinutes": 240
+      },
+      "backupEnabled": false,
+      "canRunBackupNow": false,
+      "guestToolsInstalled": true,
+      "guestToolsUpToDate": true,
+      "guestToolsVersion": "1.0.0-proto-0.4.0",
+      "createdAt": "2026-10-29T10:58:49.154919Z",
+      "updatedAt": "2026-10-29T11:02:04.109918Z"
+    }
+  ],
+  "total": 8
+}

@@ -1,0 +1,9 @@
+---
+# Inventory cache: the API is queried at most every 5 minutes. Refresh it
+# before that with: ansible-inventory -i cache.cloudtemple.yml --flush-cache --graph
+# A partial result (API error with fail_on_errors: false) is never cached.
+plugin: boukerramahmed.cloudtemple.dynamicinventory
+cache: true
+cache_plugin: ansible.builtin.jsonfile
+cache_connection: .cache/cloudtemple-inventory
+cache_timeout: 300

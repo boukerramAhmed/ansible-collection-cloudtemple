@@ -1,0 +1,12 @@
+---
+# Links shown on the collection page of the Ansible documentation and Galaxy
+edit_on_github:
+  repository: boukerramAhmed/ansible-collection-cloudtemple
+  branch: main
+  path_prefix: ''
+
+extra_links:
+  - description: Report an issue
+    url: https://github.com/boukerramAhmed/ansible-collection-cloudtemple/issues/new/choose
+  - description: Changelog
+    url: https://github.com/boukerramAhmed/ansible-collection-cloudtemple/blob/main/CHANGELOG.md

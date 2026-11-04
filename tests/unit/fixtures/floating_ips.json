@@ -1,0 +1,53 @@
+[
+  {
+    "description": "web - Managed by Terraform",
+    "id": "7aac6542-c03f-5a63-879c-90827e07a9fe",
+    "ipAddress": "198.51.100.61",
+    "privateNetwork": {
+      "id": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+      "name": "demo-private-network"
+    },
+    "staticIp": {
+      "address": "10.0.0.11",
+      "id": "4208119b-f96b-5123-a6ed-276953d2aba7"
+    },
+    "vpc": {
+      "id": "d44ba1a1-17a5-5b47-ae15-c0c6908a1b68",
+      "name": "demo-vpc"
+    }
+  },
+  {
+    "description": "vpn-gateway - Managed by Terraform",
+    "id": "da97dc60-2813-5a80-a0af-395f5e70dff9",
+    "ipAddress": "198.51.100.63",
+    "privateNetwork": {
+      "id": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+      "name": "demo-private-network"
+    },
+    "staticIp": {
+      "address": "10.0.0.20",
+      "id": "8589cc41-32b5-51d2-8a2a-f623fba77d60"
+    },
+    "vpc": {
+      "id": "d44ba1a1-17a5-5b47-ae15-c0c6908a1b68",
+      "name": "demo-vpc"
+    }
+  },
+  {
+    "description": "other vpc, same private ip (synthetic)",
+    "id": "78831c24-fa60-4b0b-9389-9eef649260e7",
+    "ipAddress": "198.51.100.62",
+    "privateNetwork": {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "name": "other-net"
+    },
+    "staticIp": {
+      "address": "10.0.0.11",
+      "id": "c3a1df55-480d-5334-a93d-0276b75897a8"
+    },
+    "vpc": {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "name": "other"
+    }
+  }
+]

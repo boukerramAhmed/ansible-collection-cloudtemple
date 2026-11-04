@@ -1,0 +1,84 @@
+---
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Weekly run to catch breakages from new ansible-core releases
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sanity:
+    name: Sanity (ansible-core ${{ matrix.ansible }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ansible:
+          - stable-2.15
+          - stable-2.16
+          - stable-2.17
+          - stable-2.18
+          - stable-2.19
+          - stable-2.20
+          - stable-2.21
+    steps:
+      - name: Run ansible-test sanity
+        uses: ansible-community/ansible-test-gh-action@release/v1
+        with:
+          ansible-core-version: ${{ matrix.ansible }}
+          testing-type: sanity
+
+  units:
+    name: Tests (ansible-core ${{ matrix.ansible }}, Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {ansible: '2.15', python: '3.11'}
+          - {ansible: '2.16', python: '3.12'}
+          - {ansible: '2.17', python: '3.12'}
+          - {ansible: '2.18', python: '3.13'}
+          - {ansible: '2.19', python: '3.13'}
+          - {ansible: '2.20', python: '3.13'}
+          - {ansible: '2.21', python: '3.13'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install ansible-core ${{ matrix.ansible }}
+        run: pip install "ansible-core~=${{ matrix.ansible }}.0" pytest pyyaml
+      - name: Run the tests
+        run: pytest -v
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install ansible-core
+      - name: Build the collection
+        run: ansible-galaxy collection build --output-path dist
+      - name: Check the artifact content
+        run: |
+          tar tzf dist/*.tar.gz | tee files.txt
+          ! grep -E '^(tests|\.github)/' files.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: collection
+          path: dist/*.tar.gz

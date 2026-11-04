@@ -1,0 +1,186 @@
+{
+  "12622af4-739b-5581-9832-d02b7d53ce7e": {
+    "vmId": "12622af4-739b-5581-9832-d02b7d53ce7e",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "e66e5810-88ca-5b87-927b-4a25557e146f",
+        "ipv4Address": "10.0.0.11",
+        "ipv4Addresses": [
+          "10.0.0.11"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:1"
+        ],
+        "macAddress": "02:00:00:00:00:01",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "79d2705d-482e-5e9e-99cb-48750962feb1": {
+    "vmId": "79d2705d-482e-5e9e-99cb-48750962feb1",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "8e80caf3-1f8c-5626-a8ce-08d8655bad4c",
+        "ipv4Address": "10.0.0.15",
+        "ipv4Addresses": [
+          "10.0.0.15"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:2"
+        ],
+        "macAddress": "02:00:00:00:00:02",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "facc7238-3589-5cfa-bfd8-63f8b759e4fe": {
+    "vmId": "facc7238-3589-5cfa-bfd8-63f8b759e4fe",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "af89e800-64d2-5777-8e89-856ab40bd80a",
+        "ipv4Address": "10.0.0.10",
+        "ipv4Addresses": [
+          "10.0.0.10"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:3"
+        ],
+        "macAddress": "02:00:00:00:00:03",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "b87a1105-4f04-544d-9b9a-924aa2ba748e": {
+    "vmId": "b87a1105-4f04-544d-9b9a-924aa2ba748e",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "2d230b8d-35bc-5ccd-b30f-fc8df0ea5777",
+        "ipv4Address": "10.0.0.13",
+        "ipv4Addresses": [
+          "10.0.0.13"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:4"
+        ],
+        "macAddress": "02:00:00:00:00:04",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "65d4cb7e-d4fc-5241-acf4-36821d366984": {
+    "vmId": "65d4cb7e-d4fc-5241-acf4-36821d366984",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "2d7a89b9-583e-5900-b339-2e70b57b7f81",
+        "ipv4Address": "10.0.0.12",
+        "ipv4Addresses": [
+          "10.0.0.12"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:5"
+        ],
+        "macAddress": "02:00:00:00:00:05",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "eda856b9-9aba-565d-a2ef-045bf773e2f5": {
+    "vmId": "eda856b9-9aba-565d-a2ef-045bf773e2f5",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "5cc38366-a878-53ed-b863-bf5d59027933",
+        "ipv4Address": "10.0.0.14",
+        "ipv4Addresses": [
+          "10.0.0.14"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:6"
+        ],
+        "macAddress": "02:00:00:00:00:06",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "39db76c2-bc2e-57b9-a198-cf2d3fcedf5e": {
+    "vmId": "39db76c2-bc2e-57b9-a198-cf2d3fcedf5e",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "35e6fa51-238c-5337-a738-ffc4b8a7be1f",
+        "ipv4Address": "10.0.0.16",
+        "ipv4Addresses": [
+          "10.0.0.16"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:7"
+        ],
+        "macAddress": "02:00:00:00:00:07",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  },
+  "f7ad8686-771d-506d-b784-000f81c4b285": {
+    "vmId": "f7ad8686-771d-506d-b784-000f81c4b285",
+    "networks": [
+      {
+        "deviceIndex": 0,
+        "id": "86aa3a44-c3ea-56bd-bf1a-446a93691297",
+        "ipv4Address": "10.0.0.20",
+        "ipv4Addresses": [
+          "10.0.0.20"
+        ],
+        "ipv6Address": null,
+        "ipv6Addresses": [
+          "fe80::ff:fe00:8"
+        ],
+        "macAddress": "02:00:00:00:00:08",
+        "networkId": "0065860b-8e49-542a-b67b-cca1bb53cf60",
+        "networkName": "demo-private-network",
+        "provisionStatus": "provisioned",
+        "type": "vpc"
+      }
+    ],
+    "total": 1
+  }
+}
